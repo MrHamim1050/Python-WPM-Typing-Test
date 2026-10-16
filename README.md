@@ -1,11 +1,15 @@
 # Python WPM Typing Test
 
-A command-line tool written in Python that measures your typing speed and calculates your Words Per Minute (WPM). It utilizes the `curses` module to provide an enhanced terminal interface.
+A command-line tool written in Python that measures your typing speed and calculates your Words Per Minute (WPM). It utilizes the curses module to provide an enhanced terminal interface, live color-coded feedback, scrolling prompts, and high-score persistence.
 
 ## Features
-- Measures real-time typing speed (WPM).
-- Command-line interface powered by Python's `curses` module.
-- Uses custom text files to source typing prompts.
+
+- **Real-Time WPM & Accuracy:** Measures your typing speed and error rate live as you type.
+- **Scrolling Prompts:** Automatically handles prompts of any length with smooth line-wrapping and terminal boundary safety.
+- **Terminal Resize Handling:** Pauses gracefully if the window is resized below minimum usable dimensions.
+- **High Score Tracking:** Saves your personal best speed and accuracy to a local file.
+- **Input Safety:** Strictly filters input to accept printable characters while properly handling Backspace and ESC exits.
+
 
 ## Prerequisites
 - Python 3.x
@@ -14,22 +18,15 @@ A command-line tool written in Python that measures your typing speed and calcul
   pip install windows-curses
 
 
-  How to Run
-Clone the repository:
+## How to Run
 
-Bash
-git clone [https://github.com/MrHamim1050/Python-WPM-Typing-Test.git](https://github.com/MrHamim1050/Python-WPM-Typing-Test.git)
-cd Python-WPM-Typing-Test
+1. Clone the repository and navigate into the folder:
+   ```bash
+   git clone https://github.com/MrHamim1050/Python-WPM-Typing-Test.git 
+   
+   cd Python-WPM-Typing-Test
 
-Run the script:
+2) Run the script:
+ ```bash
 python main.py
 
-
-### What you need to do:
-1. In your project folder on your Windows laptop (`E:\Python Class\WPM Python Project`), create a new file named `README.md`.
-2. Paste the text above into it and save the file.
-3. Push it up to GitHub with these commands in your terminal:
-   ```powershell
-   git add README.md
-   git commit -m "Add professional README"
-   git push origin main
