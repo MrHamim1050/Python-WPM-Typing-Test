@@ -74,7 +74,7 @@ def start_screen(stdscr):
         if max_y < 5 or max_x < 20:
             draw_text(stdscr, 0, 0, "Resize terminal to at least 20x5.")
         else:
-            draw_text(stdscr, 0, 0, "Welcome to the Python WPM Typing Test!", curses.A_BOLD)
+            draw_text(stdscr, 0, 0, "Welcome to Robin's Typing Speed Test!", curses.A_BOLD)
             draw_text(stdscr, 1, 0, "Type the prompt as quickly and accurately as possible.")
             draw_text(stdscr, 3, 0, "Press any key to begin.")
         stdscr.refresh()
